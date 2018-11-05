@@ -1,4 +1,4 @@
-package main.useCases.userAccount;
+package useCases.userAccount;
 
 public class UserDetails {
 
@@ -7,7 +7,7 @@ public class UserDetails {
     private final String password;
 
 
-    public UserDetails (String userName, String password) {
+    public UserDetails(String userName, String password) {
         this.userName = userName;
         this.password = password;
 

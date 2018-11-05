@@ -1,4 +1,4 @@
-package main.useCases.userAccount;
+package useCases.userAccount;
 
 public class UserAccountService {
         private final UserAccountRepository userAccountRepository;

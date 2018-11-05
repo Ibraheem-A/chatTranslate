@@ -1,4 +1,4 @@
-package main.useCases.userAccount;
+package useCases.userAccount;
 
 public interface UserAccountRepository {
         void persistUserAccount(UserAccount userAccount);
