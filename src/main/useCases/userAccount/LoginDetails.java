@@ -38,6 +38,6 @@ public class LoginDetails {
         return Objects.hash(userName, password);
     }
 
-    public
+
 
 }

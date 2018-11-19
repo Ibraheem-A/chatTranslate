@@ -46,12 +46,24 @@ public class UserAccounts {
                 '}';
     }
 
+    public String login(LoginDetails loginDetails) {
+        if (!accounts.containsKey(loginDetails)){
+            return "You are now logged in";
+        }
+        else {
+            return "Please create a new user Account";
+        }
+
+
+    }
+
     static class Account {
         private final LoginDetails loginDetails;
 
         public Account(LoginDetails loginDetails) {
             this.loginDetails = loginDetails;
         }
+
 
         @Override
         public boolean equals(Object o) {

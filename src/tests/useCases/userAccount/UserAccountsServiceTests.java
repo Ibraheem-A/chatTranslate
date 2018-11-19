@@ -20,12 +20,12 @@ class UserAccountsServiceTests {
 
     @Test
     void cartShouldBeAbleToAddOneAccount() {
-        Login login = new Login("Ibraheem", "qwerty");
-        subject.addToCurrentUserAccount(login);
+        LoginDetails loginDetails = new LoginDetails("Ibraheem", "qwerty");
+        subject.addToCurrentUserAccount(loginDetails);
 
         UserAccounts result = subject.getCurrentUserAccount();
 
-        List<UserAccounts.Account> expected = List.of(new UserAccounts.Account(login));
+        List<UserAccounts.Account> expected = List.of(new UserAccounts.Account(loginDetails));
 
         assertEquals(expected, result.accounts());
 
@@ -33,10 +33,16 @@ class UserAccountsServiceTests {
 
     @Test
     void cartShouldBeAbleToAllowUserLogin() {
-        Login login = new Login("Ibraheem", "qwerty");
-        subject.addToCurrentUserAccount(login);
+        LoginDetails loginDetails = new LoginDetails("Ibraheem", "qwerty");
+        subject.addToCurrentUserAccount(loginDetails);
 
         UserAccounts result = subject.getCurrentUserAccount();
-        assertEquals(List.of(new UserAccounts.Account(login)), result);
+        List<UserAccounts.Account> expected = List.of(new UserAccounts.Account(loginDetails));
+
+        LoginDetails loginDetails2 = new LoginDetails("Ibraheem", "qwerty");
+        subject.loginToUserAccount(loginDetails2);
+        UserAccounts result2 = subject.getCurrentUserAccount();
+
+
     }
 }

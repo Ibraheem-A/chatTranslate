@@ -11,9 +11,15 @@ public class UserAccountService {
             return userAccountRepository.fetchUserAccount();
         }
 
-        public void addToCurrentUserAccount(Login login) {
+        public void addToCurrentUserAccount(LoginDetails loginDetails) {
             UserAccounts userAccounts = userAccountRepository.fetchUserAccount();
-            userAccounts.add(login);
+            userAccounts.add(loginDetails);
+            userAccountRepository.persistUserAccount(userAccounts);
+        }
+
+        public void loginToUserAccount(LoginDetails loginDetails){
+            UserAccounts userAccounts = userAccountRepository.fetchUserAccount();
+            userAccounts.login(loginDetails);
             userAccountRepository.persistUserAccount(userAccounts);
         }
 
