@@ -7,13 +7,13 @@ public class UserAccountService {
             this.userAccountRepository = userAccountRepository;
         }
 
-        public UserAccount getUserAccount() {
+        public UserAccounts getCurrentUserAccount() {
             return userAccountRepository.fetchUserAccount();
         }
 
-        public void addToCurrentUserAccount(UserDetails userDetails) {
-            UserAccount userAccount = userAccountRepository.fetchUserAccount();
-            userAccount.add(userDetails);
-            userAccountRepository.persistUserAccount(userAccount);
+        public void addToCurrentUserAccount(Login login) {
+            UserAccounts userAccounts = userAccountRepository.fetchUserAccount();
+            userAccounts.add(login);
+            userAccountRepository.persistUserAccount(userAccounts);
         }
 }

@@ -1,7 +1,7 @@
 package useCases.userAccount;
 
 public interface UserAccountRepository {
-        void persistUserAccount(UserAccount userAccount);
+        void persistUserAccount(UserAccounts userAccounts);
 
-        UserAccount fetchUserAccount();
+        UserAccounts fetchUserAccount();
 }
