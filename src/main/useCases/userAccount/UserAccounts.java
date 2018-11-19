@@ -8,21 +8,23 @@ import java.util.Objects;
 
 
 public class UserAccounts {
-    private final Map<Login, Account> accounts = new LinkedHashMap<>();
+    private final Map<LoginDetails, Account> accounts = new LinkedHashMap<>();
 
     public List<Account> accounts() {
         return List.copyOf(accounts.values());
     }
 
-    UserAccounts add(Login login) {
-        if (!accounts.containsKey(login)) {
-            accounts.put(login, new Account(login));
+    UserAccounts add(LoginDetails loginDetails) {
+        if (!accounts.containsKey(loginDetails)) {
+            accounts.put(loginDetails, new Account(loginDetails));
         } else {
-            Account existingItem = accounts.get(login);
-            accounts.put(login, existingItem);
+            Account existingItem = accounts.get(loginDetails);
+            accounts.put(loginDetails, existingItem);
         }
         return this;
+
     }
+
 
     @Override
     public boolean equals(Object o) {
@@ -45,10 +47,10 @@ public class UserAccounts {
     }
 
     static class Account {
-        private final Login login;
+        private final LoginDetails loginDetails;
 
-        public Account(Login login) {
-            this.login = login;
+        public Account(LoginDetails loginDetails) {
+            this.loginDetails = loginDetails;
         }
 
         @Override
@@ -56,18 +58,18 @@ public class UserAccounts {
             if (this == o) return true;
             if (o == null || getClass() != o.getClass()) return false;
             Account account = (Account) o;
-            return Objects.equals(login, account.login);
+            return Objects.equals(loginDetails, account.loginDetails);
         }
 
         @Override
         public int hashCode() {
-            return Objects.hash(login);
+            return Objects.hash(loginDetails);
         }
 
         @Override
         public String toString() {
             return "Account{" +
-                    "login=" + login +
+                    "login=" + loginDetails +
                     '}';
         }
     }

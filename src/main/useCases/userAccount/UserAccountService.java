@@ -16,4 +16,5 @@ public class UserAccountService {
             userAccounts.add(login);
             userAccountRepository.persistUserAccount(userAccounts);
         }
+
 }

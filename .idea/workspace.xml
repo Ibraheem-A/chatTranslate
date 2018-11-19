@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23e05c5a-cf67-4775-a89c-7853119474a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/useCases/userAccount/UserAccounts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/useCases/userAccount/UserAccountServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/useCases/userAccount/UserAccount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/useCases/userAccount/UserAccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/useCases/userAccount/UserAccountRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/useCases/userAccount/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/useCases/userAccount/LoginDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/useCases/userAccount/UserAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/useCases/userAccount/UserAccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/useCases/userAccount/UserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/useCases/userAccount/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/FakeUserAccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/useCases/userAccount/FakeUserAccountRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/UserAccountTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/useCases/userAccount/UserAccounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/useCases/userAccount/UserAccounts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/useCases/userAccount/UserAccountsServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/useCases/userAccount/UserAccountsServiceTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -79,14 +73,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="10" />
-          <entry key="java" value="1013" />
+          <entry key="dummy" value="17" />
+          <entry key="java" value="1156" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1013" />
-          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="JAVA" value="1156" />
+          <entry key="PLAIN_TEXT" value="17" />
         </counts>
       </usages-collector>
     </session>
@@ -96,16 +90,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/useCases/userAccount/UserAccounts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+            <state relative-caret-position="136">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#359#360#0" expanded="true" />
                 <element signature="e#407#408#0" expanded="true" />
                 <element signature="e#921#922#0" expanded="true" />
                 <element signature="e#966#967#0" expanded="true" />
-                <element signature="e#767#768#0" expanded="true" />
-                <element signature="e#809#810#0" expanded="true" />
+                <element signature="e#1310#1311#0" expanded="true" />
+                <element signature="e#1352#1353#0" expanded="true" />
                 <element signature="e#1094#1095#0" expanded="true" />
                 <element signature="e#1144#1145#0" expanded="true" />
               </folding>
@@ -113,11 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/useCases/userAccount/Login.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/useCases/userAccount/LoginDetails.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+            <state relative-caret-position="193">
+              <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
               <folding>
                 <element signature="e#833#834#0" expanded="true" />
                 <element signature="e#888#889#0" expanded="true" />
@@ -129,8 +123,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/useCases/userAccount/UserAccountService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="210">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#340#341#0" expanded="true" />
                 <element signature="e#411#412#0" expanded="true" />
@@ -139,11 +133,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/tests/useCases/userAccount/UserAccountServiceTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tests/useCases/userAccount/UserAccountsServiceTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+            <state relative-caret-position="125">
+              <caret line="36" column="43" lean-forward="true" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -413,11 +407,13 @@
         <option value="$PROJECT_DIR$/src/main/test/useCases/userAccount/UserAccountServiceTestTest.java" />
         <option value="$PROJECT_DIR$/src/tests/useCases/userAccount/UserAccountTests.java" />
         <option value="$PROJECT_DIR$/src/main/useCases/userAccount/UserAccountRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/useCases/userAccount/UserAccount.java" />
+        <option value="$PROJECT_DIR$/src/tests/useCases/userAccount/UserAccountServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/useCases/userAccount/UserAccountsServiceTests.java" />
         <option value="$PROJECT_DIR$/src/main/useCases/userAccount/UserAccountService.java" />
         <option value="$PROJECT_DIR$/src/main/useCases/userAccount/Login.java" />
-        <option value="$PROJECT_DIR$/src/main/useCases/userAccount/UserAccount.java" />
         <option value="$PROJECT_DIR$/src/main/useCases/userAccount/UserAccounts.java" />
-        <option value="$PROJECT_DIR$/src/tests/useCases/userAccount/UserAccountServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/useCases/userAccount/LoginDetails.java" />
       </list>
     </option>
   </component>
@@ -456,6 +452,19 @@
               <item name="chatTranslate" type="b2602c69:ProjectViewProjectNode" />
               <item name="chatTranslate" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chatTranslate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chatTranslate" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="userAccount" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chatTranslate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chatTranslate" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -464,14 +473,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
               <item name="userAccount" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatTranslate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatTranslate" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="userAccount" type="462c0819:PsiDirectoryNode" />
-              <item name="UserAccountServiceTest.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
           </expand>
           <select />
@@ -483,7 +484,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542653233533" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542654005218" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -627,7 +628,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.71480143" visible="true" weight="0.18866397" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.71480143" visible="true" weight="0.18866397" />
       <window_info id="Structure" order="1" sideWeight="0.28519857" side_tool="true" weight="0.4114671" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -635,8 +636,8 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3291815" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.3291815" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3291815" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -713,10 +714,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/useCases/userAccount/UserAccountsServiceTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="36" column="43" lean-forward="true" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/useCases/userAccount/UserAccountService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="210">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="e#340#341#0" expanded="true" />
             <element signature="e#411#412#0" expanded="true" />
@@ -724,41 +735,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/useCases/userAccount/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-          <folding>
-            <element signature="e#833#834#0" expanded="true" />
-            <element signature="e#888#889#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/useCases/userAccount/UserAccounts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        <state relative-caret-position="136">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#359#360#0" expanded="true" />
             <element signature="e#407#408#0" expanded="true" />
             <element signature="e#921#922#0" expanded="true" />
             <element signature="e#966#967#0" expanded="true" />
-            <element signature="e#767#768#0" expanded="true" />
-            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#1310#1311#0" expanded="true" />
+            <element signature="e#1352#1353#0" expanded="true" />
             <element signature="e#1094#1095#0" expanded="true" />
             <element signature="e#1144#1145#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/useCases/userAccount/UserAccountServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/useCases/userAccount/LoginDetails.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        <state relative-caret-position="193">
+          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#888#889#0" expanded="true" />
           </folding>
         </state>
       </provider>

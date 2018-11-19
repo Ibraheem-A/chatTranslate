@@ -31,12 +31,12 @@ class UserAccountsServiceTests {
 
     }
 
-//    @Test
-//    void cartShouldBeAbleToAllowUserLogin() {
-//        Login login = new Login("Ibraheem", "qwerty");
-//        subject.addToCurrentUserAccount(login);
-//
-//        UserAccounts result = subject.getCurrentUserAccount();
-//        assertEquals(List.of(new UserAccounts.Account(login)), result);
-//    }
+    @Test
+    void cartShouldBeAbleToAllowUserLogin() {
+        Login login = new Login("Ibraheem", "qwerty");
+        subject.addToCurrentUserAccount(login);
+
+        UserAccounts result = subject.getCurrentUserAccount();
+        assertEquals(List.of(new UserAccounts.Account(login)), result);
+    }
 }

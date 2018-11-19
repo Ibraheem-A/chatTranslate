@@ -2,22 +2,23 @@ package useCases.userAccount;
 
 import java.util.Objects;
 
-public class Login {
+public class LoginDetails {
 
 
     private final String userName;
     private final String password;
 
 
-    public Login(String userName, String password) {
+    public LoginDetails(String userName, String password) {
         this.userName = userName;
         this.password = password;
 
     }
 
+
     @Override
     public String toString() {
-        return "Login{" +
+        return "LoginDetails{" +
                 "userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
                 '}';
@@ -27,7 +28,7 @@ public class Login {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Login login = (Login) o;
+        LoginDetails login = (LoginDetails) o;
         return Objects.equals(userName, login.userName) &&
                 Objects.equals(password, login.password);
     }
@@ -36,4 +37,7 @@ public class Login {
     public int hashCode() {
         return Objects.hash(userName, password);
     }
+
+    public
+
 }
