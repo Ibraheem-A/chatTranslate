@@ -5,6 +5,10 @@ import java.util.Objects;
 public class LoginDetails {
 
 
+    public String getUserName() {
+        return userName;
+    }
+
     private final String userName;
     private final String password;
 

@@ -10,7 +10,7 @@ import java.util.Objects;
 
 
 public class UserAccounts {
-    private final Map<LoginDetails, Account> accounts = new LinkedHashMap<>();
+    private static final Map<LoginDetails, Account> accounts = new LinkedHashMap<>();
 
     public List<Account> accounts() {
         return ImmutableList.copyOf(accounts.values());
@@ -20,11 +20,22 @@ public class UserAccounts {
         if (!accounts.containsKey(loginDetails)) {
             accounts.put(loginDetails, new Account(loginDetails));
         } else {
-            Account existingItem = accounts.get(loginDetails);
-            accounts.put(loginDetails, existingItem);
+            Account existingAccount = accounts.get(loginDetails);
+            accounts.put(loginDetails, existingAccount);
         }
         return this;
 
+    }
+
+    public boolean doesAccountExist(String username){
+        return accounts().stream().anyMatch(a->a.loginDetails.getUserName().equals(username));
+
+//        for (Account account: accounts()) {
+//            if (account.loginDetails.getUserName().equals(username)) {
+//                return true;
+//            }
+//        }
+//        return false
     }
 
 
