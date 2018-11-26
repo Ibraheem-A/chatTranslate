@@ -1,11 +1,8 @@
 package translate.useCases.userAccount;
 
 public class UserAccountService {
-        private final UserAccountRepository userAccountRepository;
+        private final UserAccountRepository userAccountRepository = new FakeUserAccountRepository();
 
-        public UserAccountService(UserAccountRepository userAccountRepository) {
-            this.userAccountRepository = userAccountRepository;
-        }
 
         public UserAccounts getCurrentUserAccount() {
             return userAccountRepository.fetchUserAccount();
