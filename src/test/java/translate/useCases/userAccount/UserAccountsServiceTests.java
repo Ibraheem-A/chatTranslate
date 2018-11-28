@@ -10,8 +10,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class UserAccountsServiceTests {
-    private final UserAccountRepository userAccountRepository = new FakeUserAccountRepository();
-    private final UserAccountService subject = new UserAccountService(userAccountRepository);
+
+    private final UserAccountService subject = new UserAccountService();
 
     @Test
     void cartShouldBeInitiallyEmpty() {

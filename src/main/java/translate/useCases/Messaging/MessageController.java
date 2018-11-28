@@ -15,11 +15,9 @@ public class MessageController {
     MessageService messageService = new MessageService();
 
     @RequestMapping(path = "messages", method = RequestMethod.GET)
-    public List<MessagesDTO> getMessages(@RequestHeader HttpHeaders headers) {
-        List <String> userHeaders = headers.get("Username");
-        if (userHeaders == null || userHeaders.size() != 1){
-            throw new IllegalArgumentException();
-        } else if (new UserAccounts().doesAccountExist(userHeaders.get(0))) {
+    public List<MessagesDTO> getMessages(@RequestHeader(name ="Username") String username) {
+
+        if (new UserAccounts().doesAccountExist(username)) {
             return messageService.getMessages()
                     .stream()
                     .map(MessagesDTO::from)
@@ -32,10 +30,16 @@ public class MessageController {
 
 
     @RequestMapping(path = "messages", method = RequestMethod.POST)
-    public void composeMessages(@RequestBody MessagesDTO messagesDTO) {
-        messageService.addToMessageList(messagesDTO.toMessages());
-
+    public void composeMessages(@RequestHeader (name = "Username") String username, @RequestBody MessagesDTO messagesDTO) {
+        if (new UserAccounts().doesAccountExist(username)){
+            messageService.addToMessageList(messagesDTO.toMessages());
+        }
+        else {
+            throw new IllegalArgumentException();
+        }
     }
+
+
 
 
 

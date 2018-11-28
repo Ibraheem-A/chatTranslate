@@ -10,18 +10,20 @@ import java.util.Objects;
 
 
 public class UserAccounts {
-    private static final Map<LoginDetails, Account> accounts = new LinkedHashMap<>();
+    private static final Map<String, Account> accounts = new LinkedHashMap<>();
 
     public List<Account> accounts() {
         return ImmutableList.copyOf(accounts.values());
     }
 
+
     UserAccounts add(LoginDetails loginDetails) {
-        if (!accounts.containsKey(loginDetails)) {
-            accounts.put(loginDetails, new Account(loginDetails));
+
+        if (!accounts.containsKey(loginDetails.getUserName())) {
+            accounts.put(loginDetails.getUserName(), new Account(loginDetails));
         } else {
-            Account existingAccount = accounts.get(loginDetails);
-            accounts.put(loginDetails, existingAccount);
+            Account existingAccount = accounts.get(loginDetails.getUserName());
+            accounts.put(loginDetails.getUserName(), existingAccount);
         }
         return this;
 
