@@ -1,4 +1,4 @@
-package translate.useCases.Messaging;
+package translate.useCases.messaging;
 
 import java.util.Objects;
 

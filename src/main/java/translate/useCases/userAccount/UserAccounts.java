@@ -21,10 +21,13 @@ public class UserAccounts {
 
         if (!accounts.containsKey(loginDetails.getUserName())) {
             accounts.put(loginDetails.getUserName(), new Account(loginDetails));
-        } else {
-            Account existingAccount = accounts.get(loginDetails.getUserName());
-            accounts.put(loginDetails.getUserName(), existingAccount);
+        } else if (accounts.containsKey(loginDetails.getUserName())) {
+            throw new IllegalArgumentException();
         }
+//        else {
+//            Account existingAccount = accounts.get(loginDetails.getUserName());
+//            accounts.put(loginDetails.getUserName(), existingAccount);
+//        }
         return this;
 
     }

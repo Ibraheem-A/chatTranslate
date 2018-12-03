@@ -1,8 +1,7 @@
-package translate.useCases.Messaging;
+package translate.useCases.messaging;
 
-import org.springframework.http.HttpHeaders;
 import org.springframework.web.bind.annotation.*;
-import translate.useCases.userAccount.UserAccountService;
+import translate.useCases.translation.Translation;
 import translate.useCases.userAccount.UserAccounts;
 
 import java.util.Collections;
@@ -13,14 +12,15 @@ import java.util.stream.Collectors;
 public class MessageController {
 
     MessageService messageService = new MessageService();
+    Translation translation = new Translation();
 
     @RequestMapping(path = "messages", method = RequestMethod.GET)
-    public List<MessagesDTO> getMessages(@RequestHeader(name ="Username") String username) {
+    public List<MessagesDTO> getMessages(@RequestHeader(name ="Username") String username, @RequestParam(name="Language") String language)  {
 
         if (new UserAccounts().doesAccountExist(username)) {
-            return messageService.getMessages()
-                    .stream()
-                    .map(MessagesDTO::from)
+            return messageService.getMessages().stream()
+                    .map(Translation::trn)
+                    .map(MessagesDTO::from) //
                     .collect(Collectors.toList());
         }
         else {
@@ -38,8 +38,6 @@ public class MessageController {
             throw new IllegalArgumentException();
         }
     }
-
-
 
 
 
