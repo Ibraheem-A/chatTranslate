@@ -2,7 +2,7 @@ package translate.useCases.messaging;
 
 public class ReceiveMessagesDTO {
     private String messages;
-    private String userReciever;
+    private String userReceiver;
 
     public ReceiveMessagesDTO() {
     }
@@ -15,11 +15,11 @@ public class ReceiveMessagesDTO {
         this.messages = messages;
     }
 
-    public String getUserReciever() {
-        return userReciever;
+    public String getUserReceiver() {
+        return userReceiver;
     }
 
-    public void setUserReciever(String userReciever) {
-        this.userReciever = userReciever;
+    public void setUserReceiver(String userReceiver) {
+        this.userReceiver = userReceiver;
     }
 }
