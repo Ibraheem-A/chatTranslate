@@ -4,10 +4,15 @@ import java.util.Objects;
 
 public class Messages {
     private final String message;
+    private final String sender;
 
-
-    public Messages (String message){
+    public Messages (String message, String sender){
         this.message = message;
+        this.sender = sender;
+    }
+
+    public String getSender() {
+        return sender;
     }
 
     @Override
@@ -15,12 +20,13 @@ public class Messages {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Messages messages = (Messages) o;
-        return Objects.equals(message, messages.message);
+        return Objects.equals(message, messages.message) &&
+                Objects.equals(sender, messages.sender);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(message);
+        return Objects.hash(message, sender);
     }
 
     @Override

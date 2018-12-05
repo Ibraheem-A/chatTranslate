@@ -21,13 +21,15 @@ public class Translation {
 
 
     public static Messages trn(Messages messages, String language) {
-        if (language == "English") {
-            new Messages(translateToEnglish.getOrDefault(messages.getMessage(), messages.getMessage()));
+        switch (language) {
+            case "English":
+                return new Messages(translateToEnglish.getOrDefault(messages.getMessage(), messages.getMessage()));
+            case "German":
+                return new Messages(translateToGerman.getOrDefault(messages.getMessage(), messages.getMessage()));
+            default:
+                return new Messages(messages.getMessage());
         }
-        else if (language == "German"){
-            new Messages(translateToGerman.getOrDefault(messages.getMessage(), messages.getMessage()));
-        }
-        return;
+
     }
 
 }

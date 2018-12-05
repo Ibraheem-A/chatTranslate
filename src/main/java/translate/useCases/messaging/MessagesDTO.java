@@ -4,18 +4,25 @@ public class MessagesDTO {
 
     private String messages;
 
+    private String user;
+
     MessagesDTO() {}
 
-    MessagesDTO(String messages) {
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    MessagesDTO(String messages, String user) {
         this.messages = messages;
+        this.user = user;
     }
 
     public static MessagesDTO from(Messages messages) {
-        return new MessagesDTO(messages.getMessage());
-    }
-
-    public Messages toMessages() {
-        return new Messages(this.messages);
+        return new MessagesDTO(messages.getMessage(), messages.getSender());
     }
 
     public String getMessages() {
