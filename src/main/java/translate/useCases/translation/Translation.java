@@ -23,11 +23,11 @@ public class Translation {
     public static Messages trn(Messages messages, String language) {
         switch (language) {
             case "English":
-                return new Messages(translateToEnglish.getOrDefault(messages.getMessage(), messages.getMessage()));
+                return new Messages(translateToEnglish.getOrDefault(messages.getMessage(), messages.getMessage()), messages.getSender());
             case "German":
-                return new Messages(translateToGerman.getOrDefault(messages.getMessage(), messages.getMessage()));
+                return new Messages(translateToGerman.getOrDefault(messages.getMessage(), messages.getMessage()), messages.getSender());
             default:
-                return new Messages(messages.getMessage());
+                return new Messages(messages.getMessage(), messages.getSender());
         }
 
     }

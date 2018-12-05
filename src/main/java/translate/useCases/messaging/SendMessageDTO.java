@@ -7,6 +7,11 @@ public class SendMessageDTO {
     public SendMessageDTO() {
     }
 
+    public SendMessageDTO(String messages, String userSender) {
+        this.messages = messages;
+        this.userSender = userSender;
+    }
+
     public void setMessages(String messages) {
         this.messages = messages;
     }

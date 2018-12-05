@@ -13,15 +13,14 @@ import java.util.stream.Collectors;
 public class MessageController {
 
     MessageService messageService = new MessageService();
-    Translation translation = new Translation();
 
     @RequestMapping(path = "messages", method = RequestMethod.GET)
-    public List<MessagesDTO> getMessages(@RequestHeader(name ="Username") String username, @RequestParam(name="Language", required = false) String language)  {
+    public List<SendMessageDTO> getMessages(@RequestHeader(name ="Username") String username, @RequestParam(name="Language", required = false) String language)  {
 
         if (new UserAccounts().doesAccountExist(username)) {
             return messageService.getMessages(username).stream()
                     .map((Messages message) -> Translation.trn(message, language))
-                    .map(MessagesDTO::from)
+                    .map(messages -> new SendMessageDTO(messages.getMessage(), messages.getSender()))
                     .collect(Collectors.toList());
         }
         else {
@@ -31,10 +30,10 @@ public class MessageController {
 
 
     @RequestMapping(path = "messages", method = RequestMethod.POST)
-    public void composeMessages(@RequestHeader (name = "Username") String username, @RequestBody MessagesDTO messagesDTO) {
+    public void composeMessages(@RequestHeader (name = "Username") String username, @RequestBody ReceiveMessagesDTO recievedMessage) {
         if (new UserAccounts().doesAccountExist(username)){
-            Messages messages = new Messages(messagesDTO.getMessages(), username);
-            messageService.addToMessageList(messages, messagesDTO.getUser());
+            Messages messages = new Messages(recievedMessage.getMessages(), username);
+            messageService.addToMessageList(messages, recievedMessage.getUserReceiver());
         }
         else {
             throw new IllegalArgumentException();

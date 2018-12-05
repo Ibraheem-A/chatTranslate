@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23e05c5a-cf67-4775-a89c-7853119474a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/translate/useCases/messaging/SendMessageDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/translate/useCases/Messaging/MessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/translate/useCases/Messaging/MessageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/translate/useCases/Messaging/MessageRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/translate/useCases/Messaging/MessageRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/translate/useCases/Messaging/MessageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/translate/useCases/Messaging/MessageService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/translate/useCases/Messaging/MessagesDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/translate/useCases/Messaging/MessagesDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/translate/useCases/Messaging/Messaging.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/translate/useCases/Messaging/Messaging.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/translate/useCases/translation/Translation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/translate/useCases/translation/Translation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/translate/useCases/messaging/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/translate/useCases/messaging/MessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/translate/useCases/messaging/MessageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/translate/useCases/messaging/MessageRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/translate/useCases/messaging/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/translate/useCases/messaging/MessageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/translate/useCases/messaging/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/translate/useCases/messaging/Messages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/translate/useCases/messaging/MessagesDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/translate/useCases/messaging/MessagesDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/translate/useCases/messaging/Messaging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/translate/useCases/messaging/Messaging.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/translate/useCases/messaging/SendMessageDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/translate/useCases/messaging/SendMessageDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/translate/useCases/translation/Translation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/translate/useCases/translation/Translation.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -95,26 +83,26 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gradle" value="6" />
-          <entry key="java" value="107" />
+          <entry key="java" value="108" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="6" />
-          <entry key="JAVA" value="107" />
+          <entry key="JAVA" value="108" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="17" />
           <entry key="gradle" value="25" />
-          <entry key="java" value="7509" />
+          <entry key="java" value="7589" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="25" />
-          <entry key="JAVA" value="7509" />
+          <entry key="JAVA" value="7589" />
           <entry key="PLAIN_TEXT" value="17" />
         </counts>
       </usages-collector>
@@ -122,11 +110,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/translate/useCases/messaging/MessageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-10">
-              <caret line="22" column="82" lean-forward="true" selection-start-line="22" selection-start-column="82" selection-end-line="22" selection-end-column="82" />
+            <state relative-caret-position="327">
+              <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -134,13 +122,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/translate/useCases/messaging/SendMessageDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+            <state relative-caret-position="153">
+              <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
               <folding>
                 <element signature="e#212#213#0" expanded="true" />
                 <element signature="e#252#253#0" expanded="true" />
                 <element signature="e#162#163#0" expanded="true" />
                 <element signature="e#193#194#0" expanded="true" />
+                <element signature="e#355#356#0" expanded="true" />
                 <element signature="e#388#389#0" expanded="true" />
                 <element signature="e#440#441#0" expanded="true" />
                 <element signature="e#484#485#0" expanded="true" />
@@ -149,14 +138,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/translate/useCases/translation/Translation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/translate/useCases/messaging/ReceiveMessagesDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            <state relative-caret-position="425">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="e#209#210#0" expanded="true" />
                 <element signature="e#240#241#0" expanded="true" />
+                <element signature="e#288#289#0" expanded="true" />
                 <element signature="e#328#329#0" expanded="true" />
                 <element signature="e#367#368#0" expanded="true" />
                 <element signature="e#402#403#0" expanded="true" />
@@ -204,8 +206,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/translate/useCases/messaging/Messaging.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+            <state relative-caret-position="391">
+              <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
               <folding>
                 <element signature="e#433#434#0" expanded="true" />
                 <element signature="e#474#475#0" expanded="true" />
@@ -238,8 +240,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/translate/useCases/messaging/Messages.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+            <state relative-caret-position="187">
+              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
               <folding>
                 <element signature="e#310#311#0" expanded="true" />
                 <element signature="e#339#340#0" expanded="true" />
@@ -743,15 +745,15 @@
         <option value="$PROJECT_DIR$/src/test/java/translate/useCases/userAccount/UserAccountsServiceTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/translate/useCases/Messaging/MessageController.java" />
         <option value="$PROJECT_DIR$/src/main/java/translate/useCases/userAccount/UserAccounts.java" />
-        <option value="$PROJECT_DIR$/src/main/java/translate/useCases/translation/Translation.java" />
         <option value="$PROJECT_DIR$/src/main/java/translate/useCases/messaging/MessageService.java" />
         <option value="$PROJECT_DIR$/src/main/java/translate/useCases/messaging/MessageRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/translate/useCases/messaging/Messaging.java" />
         <option value="$PROJECT_DIR$/src/main/java/translate/useCases/messaging/Messages.java" />
         <option value="$PROJECT_DIR$/src/main/java/translate/useCases/messaging/MessagesDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/translate/useCases/messaging/MessageController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/translate/useCases/messaging/SendMessageDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/translate/useCases/messaging/ReceiveMessagesDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/translate/useCases/translation/Translation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/translate/useCases/messaging/SendMessageDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/translate/useCases/messaging/MessageController.java" />
       </list>
     </option>
   </component>
@@ -876,7 +878,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544038820011" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544039617831" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -1057,7 +1059,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3291815" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3291815" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3985765" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1110,33 +1112,6 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/translate/useCases/translation/Translation.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/translate/useCases/translation/Translation.java</url>
-          <line>27</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/translate/useCases/messaging/MessageController.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1276,16 +1251,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/translate/useCases/translation/Translation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/translate/useCases/userAccount/UserAccounts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1303,45 +1268,6 @@
             <element signature="e#275#276#0" expanded="true" />
             <element signature="e#607#608#0" expanded="true" />
             <element signature="e#671#672#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/translate/useCases/messaging/MessageRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/translate/useCases/messaging/Messaging.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
-          <folding>
-            <element signature="e#433#434#0" expanded="true" />
-            <element signature="e#474#475#0" expanded="true" />
-            <element signature="e#1249#1250#0" expanded="true" />
-            <element signature="e#1297#1298#0" expanded="true" />
-            <element signature="e#1336#1337#0" expanded="true" />
-            <element signature="e#1375#1376#0" expanded="true" />
-            <element signature="e#1623#1624#0" expanded="true" />
-            <element signature="e#1676#1677#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/translate/useCases/messaging/Messages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-          <folding>
-            <element signature="e#310#311#0" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#703#704#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#732#733#0" expanded="true" />
-            <element signature="e#767#768#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1366,22 +1292,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/translate/useCases/messaging/MessageController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/translate/useCases/messaging/MessageRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="22" column="82" lean-forward="true" selection-start-line="22" selection-start-column="82" selection-end-line="22" selection-end-column="82" />
+        <state relative-caret-position="204">
+          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/translate/useCases/messaging/Messaging.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+          <folding>
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
+            <element signature="e#1297#1298#0" expanded="true" />
+            <element signature="e#1336#1337#0" expanded="true" />
+            <element signature="e#1375#1376#0" expanded="true" />
+            <element signature="e#1623#1624#0" expanded="true" />
+            <element signature="e#1676#1677#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/translate/useCases/messaging/ReceiveMessagesDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#209#210#0" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/translate/useCases/messaging/Messages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="e#310#311#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#703#704#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/translate/useCases/translation/Translation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/translate/useCases/messaging/SendMessageDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+        <state relative-caret-position="153">
+          <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
           <folding>
             <element signature="e#212#213#0" expanded="true" />
             <element signature="e#252#253#0" expanded="true" />
             <element signature="e#162#163#0" expanded="true" />
             <element signature="e#193#194#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
             <element signature="e#388#389#0" expanded="true" />
             <element signature="e#440#441#0" expanded="true" />
             <element signature="e#484#485#0" expanded="true" />
@@ -1389,19 +1375,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/translate/useCases/messaging/ReceiveMessagesDTO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/translate/useCases/messaging/MessageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-          <folding>
-            <element signature="e#209#210#0" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#328#329#0" expanded="true" />
-            <element signature="e#367#368#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="327">
+          <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
         </state>
       </provider>
     </entry>
