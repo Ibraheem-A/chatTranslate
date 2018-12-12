@@ -17,6 +17,7 @@ public class Translation {
 
         // English to German
         translateToGerman.put("Hello", "Hallo");
+        translateToGerman.put("Good Morning", "Guten Morgen");
         translateToGerman.put("How are you", "Wie geht's");
         translateToGerman.put("I'm fine", "Ich bin gut");
         translateToGerman.put("I'm fine. Thanks", "Ich bin gut. Danke");
@@ -24,9 +25,7 @@ public class Translation {
         translateToGerman.put("Have a nice evening", "Schonen Abend");
         translateToGerman.put("Bye", "Tchuss");
         translateToGerman.put("See you again", "Auf wiedersehen");
-        // English to Spanish
-
-
+        translateToGerman.put("REDI is awesome", "REDI ist toll");
 
 
 
@@ -34,13 +33,16 @@ public class Translation {
 
         // German to English
         translateToEnglish.put("Hallo", "Hello");
+        translateToEnglish.put("Guten Morgen", "Good Morning");
         translateToEnglish.put("Wie geht's", "How are you");
         translateToEnglish.put("Ich bin gut", "I'm fine");
         translateToEnglish.put("Ich bin gut. Danke", "I'm fine. Thanks");
         translateToEnglish.put("Danke REDI", "Thank you REDI");
         translateToEnglish.put("Schonen Abend", "Have a nice evening");
         translateToEnglish.put("Tchuss", "Bye");
-//        translateToEnglish.put("")
+        translateToEnglish.put("Auf Weidersehen", "See you again");
+        translateToEnglish.put("REDI ist toll", "REDI is awesome");
+
     }
 
 
