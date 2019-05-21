@@ -18,14 +18,16 @@ public class Translation {
         // English to German
         translateToGerman.put("Hello", "Hallo");
         translateToGerman.put("Good Morning", "Guten Morgen");
+        translateToGerman.put("Good Evening", "Guten Abend");
         translateToGerman.put("How are you", "Wie geht's");
-        translateToGerman.put("I'm fine", "Ich bin gut");
+        translateToGerman.put("I'm fine", "Mir geht es gut");
         translateToGerman.put("I'm fine. Thanks", "Ich bin gut. Danke");
         translateToGerman.put("Thank you REDI", "Danke REDI");
         translateToGerman.put("Have a nice evening", "Schonen Abend");
         translateToGerman.put("Bye", "Tchuss");
         translateToGerman.put("See you again", "Auf wiedersehen");
         translateToGerman.put("REDI is awesome", "REDI ist toll");
+        translateToGerman.put("Yes, REDI is awesome", "Ja, REDI ist toll");
 
 
 
@@ -34,14 +36,16 @@ public class Translation {
         // German to English
         translateToEnglish.put("Hallo", "Hello");
         translateToEnglish.put("Guten Morgen", "Good Morning");
+        translateToEnglish.put("Guten Abend", "Good Evening");
         translateToEnglish.put("Wie geht's", "How are you");
-        translateToEnglish.put("Ich bin gut", "I'm fine");
+        translateToEnglish.put("Mir geht es gut", "I'm fine");
         translateToEnglish.put("Ich bin gut. Danke", "I'm fine. Thanks");
         translateToEnglish.put("Danke REDI", "Thank you REDI");
         translateToEnglish.put("Schonen Abend", "Have a nice evening");
         translateToEnglish.put("Tchuss", "Bye");
         translateToEnglish.put("Auf Weidersehen", "See you again");
         translateToEnglish.put("REDI ist toll", "REDI is awesome");
+        translateToEnglish.put("Ja, REDI ist toll", "Yes, REDI is awesome");
 
     }
 

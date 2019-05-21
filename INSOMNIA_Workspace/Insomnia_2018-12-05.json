@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2018-12-12T20:00:12.714Z",
+	"__export_date": "2018-12-13T23:50:52.952Z",
 	"__export_source": "insomnia.desktop.app:v6.2.3",
 	"resources": [
 		{
@@ -51,7 +51,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1542830277088,
 			"method": "GET",
-			"modified": 1544644628362,
+			"modified": 1544744994659,
 			"name": "GetMessages_Eng",
 			"parameters": [
 				{
@@ -89,7 +89,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1543259514607,
 			"method": "POST",
-			"modified": 1544644660982,
+			"modified": 1544732446343,
 			"name": "CreateNewAccount_Sam",
 			"parameters": [],
 			"parentId": "wrk_3a8951fbd3d8486baa32caf8444f5341",
@@ -126,8 +126,8 @@
 			"isPrivate": false,
 			"metaSortKey": -1542830390578.5,
 			"method": "POST",
-			"modified": 1544644622906,
-			"name": "ComposeMessages 2",
+			"modified": 1544745025535,
+			"name": "ComposeMessages S2",
 			"parameters": [],
 			"parentId": "wrk_3a8951fbd3d8486baa32caf8444f5341",
 			"settingDisableRenderRequestBody": false,
@@ -163,8 +163,8 @@
 			"isPrivate": false,
 			"metaSortKey": -1542830333833.25,
 			"method": "POST",
-			"modified": 1544644625689,
-			"name": "ComposeMessages 3",
+			"modified": 1544745017841,
+			"name": "ComposeMessages S3",
 			"parameters": [],
 			"parentId": "wrk_3a8951fbd3d8486baa32caf8444f5341",
 			"settingDisableRenderRequestBody": false,
@@ -195,7 +195,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1543045009338,
 			"method": "POST",
-			"modified": 1544644667281,
+			"modified": 1544732950234,
 			"name": "CreateNewAccount_Lisa",
 			"parameters": [],
 			"parentId": "wrk_3a8951fbd3d8486baa32caf8444f5341",
@@ -225,7 +225,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1542138226625.5,
 			"method": "GET",
-			"modified": 1544644631718,
+			"modified": 1544744993851,
 			"name": "GetMessages_Ger",
 			"parameters": [
 				{
@@ -249,7 +249,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"messages\":\"Good Morning\",\n\t\"userReceiver\":\"Lisa\"\n}"
+				"text": "{\n\t\"messages\":\"Good Evening\",\n\t\"userReceiver\":\"Lisa\"\n}"
 			},
 			"created": 1544642066815,
 			"description": "",
@@ -268,9 +268,192 @@
 			"isPrivate": false,
 			"metaSortKey": -1542937699958.25,
 			"method": "POST",
-			"modified": 1544644668193,
-			"name": "ComposeMessages 1",
+			"modified": 1544745026550,
+			"name": "ComposeMessages S1",
 			"parameters": [],
+			"parentId": "wrk_3a8951fbd3d8486baa32caf8444f5341",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:8080/messages",
+			"_type": "request"
+		},
+		{
+			"_id": "req_794eb2c3ab34468da396470ca455a289",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"messages\":\"Guten Abend\",\n\t\"userReceiver\":\"Sam\"\n}"
+			},
+			"created": 1544730274687,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_3679954b773243db97de818cd8d8b639",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_b7f0019f8d2b456cbe4db3334bac03cf",
+					"name": "Username",
+					"value": "Lisa"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1542830319646.9375,
+			"method": "POST",
+			"modified": 1544745010284,
+			"name": "ComposeMessages L1",
+			"parameters": [],
+			"parentId": "wrk_3a8951fbd3d8486baa32caf8444f5341",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:8080/messages",
+			"_type": "request"
+		},
+		{
+			"_id": "req_ee7b6bcb57194e54ad14be29b0687731",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"messages\":\"Mir geht es gut\",\n\t\"userReceiver\":\"Sam\"\n}"
+			},
+			"created": 1544730279038,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_3679954b773243db97de818cd8d8b639",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_b7f0019f8d2b456cbe4db3334bac03cf",
+					"name": "Username",
+					"value": "Lisa"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1542830291274.3125,
+			"method": "POST",
+			"modified": 1544745006259,
+			"name": "ComposeMessages L2",
+			"parameters": [],
+			"parentId": "wrk_3a8951fbd3d8486baa32caf8444f5341",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:8080/messages",
+			"_type": "request"
+		},
+		{
+			"_id": "req_ae94968e1e944079bddb9296ea6cf5ed",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"messages\":\"Ja, REDI ist toll\",\n\t\"userReceiver\":\"Sam\"\n}"
+			},
+			"created": 1544730282700,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_3679954b773243db97de818cd8d8b639",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_b7f0019f8d2b456cbe4db3334bac03cf",
+					"name": "Username",
+					"value": "Lisa"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1542830284181.1562,
+			"method": "POST",
+			"modified": 1544745000985,
+			"name": "ComposeMessages L3",
+			"parameters": [],
+			"parentId": "wrk_3a8951fbd3d8486baa32caf8444f5341",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:8080/messages",
+			"_type": "request"
+		},
+		{
+			"_id": "req_80f2971635274372b370b16ee21a1b59",
+			"authentication": {},
+			"body": {},
+			"created": 1544730594788,
+			"description": "",
+			"headers": [
+				{
+					"disabled": false,
+					"id": "pair_47c7f87f1d5643bcbdc882467e2c12f5",
+					"name": "Username",
+					"value": "Sam"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1542138226575.5,
+			"method": "GET",
+			"modified": 1544744981972,
+			"name": "GetMessages_GerS",
+			"parameters": [
+				{
+					"id": "pair_440275f1bc5e4565ac5ef531f0a8c7ae",
+					"name": "Language",
+					"value": "German"
+				}
+			],
+			"parentId": "wrk_3a8951fbd3d8486baa32caf8444f5341",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:8080/messages",
+			"_type": "request"
+		},
+		{
+			"_id": "req_26a17498395e4eac9186fc5876785146",
+			"authentication": {},
+			"body": {},
+			"created": 1544730604232,
+			"description": "",
+			"headers": [
+				{
+					"disabled": false,
+					"id": "pair_47c7f87f1d5643bcbdc882467e2c12f5",
+					"name": "Username",
+					"value": "Sam"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1542138226613,
+			"method": "GET",
+			"modified": 1544744983863,
+			"name": "GetMessages_EngS",
+			"parameters": [
+				{
+					"id": "pair_440275f1bc5e4565ac5ef531f0a8c7ae",
+					"name": "Language",
+					"value": "English"
+				}
+			],
 			"parentId": "wrk_3a8951fbd3d8486baa32caf8444f5341",
 			"settingDisableRenderRequestBody": false,
 			"settingEncodeUrl": true,
